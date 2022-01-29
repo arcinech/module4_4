@@ -39,6 +39,17 @@ section {
     padding: 110px 0 70px
 }
 
+.section-title {
+    font-family: $font-header;
+    font-size: 40px;
+    font-weight: bold;
+}
+.sub-title {
+    font-family: $font-header;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* splash */
 
 .splash {
@@ -81,6 +92,25 @@ section {
 }
 
 /* services */
+
+.services-inner {
+    padding: 0 50px;
+
+    p {
+        font-family: $font-secondary;
+    }
+}
+
+.services-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border: 3px solid $color-yellowy;
+    border-radius: 50%;
+    margin: auto;
+}
 
 /* portfolio */
 
