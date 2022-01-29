@@ -1,3 +1,34 @@
+/* variables */
+/* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.btn {
+  display: inline-block;
+  min-width: 240px;
+  border-radius: 3px;
+  background-color: #FED136;
+  font-size: 18px;
+  font-family: "Mongolian Baiti", serif;
+  padding: 23px 10px;
+  color: #ffffff;
+}
+
+section {
+  padding: 110px 0 70px;
+}
+
+/* splash */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBUUEsV0FBQTtBQUVBOzs7RUFHSSxzQkFBQTtBQ1BKOztBRFVBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0EsaUNBakJRO0VBa0JSLGVBQUE7RUFDQSxnQkFBQTtBQ1BKOztBRFVBO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBdkJZO0VBd0JaLGVBQUE7RUFDQSxxQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsY0ExQlU7QUNtQmQ7O0FEVUE7RUFDSSxxQkFBQTtBQ1BKOztBRFVBLFdBQUEiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
