@@ -61,6 +61,42 @@ section {
 
 /* splash */
 
+nav {
+    padding: 36px 0;
+
+    .row {
+        justify-content: space-between;
+        
+        &:last-child {
+            align-self: end;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $font-header;
+
+        &.pagetitle {
+            color: $color-yellowy;
+            font-family: 'Wisdom Script', sans-serif;
+            font-size: 26px;
+            text-shadow: 0 -1px $font-header;
+        }
+        color: $color-light;
+
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 0 40px 0 0;
+        }
+
+    }
+}
 .splash {
     background: url(/images/background.png) center no-repeat;
     height: 100vh;
@@ -142,7 +178,7 @@ section {
 
     .box-inner {
         padding:  25px;
-        
+
         * {
             margin: 0;
         }
