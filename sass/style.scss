@@ -7,6 +7,8 @@ $font-header: 'Montserrat', sans-serif;
 $color-yellowy: #FED136;
 $color-light: #ffffff;
 
+$transition: all 1s;
+
 /* global */
 
 *,
@@ -33,6 +35,12 @@ body {
     text-decoration: none;
     padding: 23px 10px;
     color: $color-light;
+
+    &:hover {
+        background-color: $color-light;
+        color: $color-yellowy;
+        transition: $transition;
+    }
 }
 
 section {
@@ -67,7 +75,7 @@ nav {
     .row {
         justify-content: space-between;
         
-        &:last-child {
+        & > div:last-child {
             align-self: end;
         }
     }
@@ -80,7 +88,7 @@ nav {
             color: $color-yellowy;
             font-family: 'Wisdom Script', sans-serif;
             font-size: 26px;
-            text-shadow: 0 -1px $font-header;
+            text-shadow: 0 -1px $color-light;
         }
         color: $color-light;
 
@@ -93,6 +101,10 @@ nav {
         li {
             display: inline-block;
             margin: 0 40px 0 0;
+
+            &:last-of-type {
+                margin: 0;
+            }
         }
 
     }
@@ -117,6 +129,7 @@ nav {
 
     .splash-inner {
         color: $color-light;
+        width: 100%;
         position:absolute;
         top: 50%;
         left: 50%;
@@ -139,9 +152,14 @@ nav {
 /* services */
 
 .services-inner {
-    padding: 0 30px;
+    padding: 22px 30px 0;
+
+    * {
+        margin: 0;
+    }
 
     p {
+        margin-top: 8px;
         font-family: $font-secondary;
     }
 }
@@ -177,7 +195,7 @@ nav {
     }
 
     .box-inner {
-        padding:  25px;
+        padding:  25px 0;
 
         * {
             margin: 0;
@@ -219,6 +237,72 @@ footer {
         color: $color-light;
         background: #222222;
         border-radius: 50%;
+
+        &:hover {
+            background : $color-yellowy;
+            transition: $transition;
+        }
     }
 
+}
+
+/* responsive */
+
+@media (max-width: 767px) {
+
+    .splash .splash-inner {
+
+        .splash-subtitle {
+            font-size: 22px;
+        }
+
+        .splash-title {
+            font-size: 30px;
+        }
+
+        .btn {
+            min-width: 200px;
+            font-size: 16px;
+        }
+
+    }
+
+    nav {
+        .col-12 {
+            padding-bottom: 30px;
+    
+        }
+
+        ul li {
+            margin: 0 20px 0 0;
+        }
+    }
+
+    .portfolio .box {
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .splash .splash-inner {
+
+        .splash-subtitle {
+            font-size: 30px;
+        }
+
+        .splash-title {
+            font-size: 40px;
+        }
+
+        .btn {
+            min-width: 220px;
+            font-size: 16px;
+        }
+
+    }
+
+    .footnote {
+        order: 2;
+        padding-top: 10px;
+    }
 }
