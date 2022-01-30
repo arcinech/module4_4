@@ -39,6 +39,15 @@ section {
     padding: 110px 0 70px
 }
 
+.section-head {
+    padding-bottom: 76px;
+
+    * {
+        margin:0;
+        padding: 8px;
+    }
+}
+
 .section-title {
     font-family: $font-header;
     font-size: 40px;
@@ -94,7 +103,7 @@ section {
 /* services */
 
 .services-inner {
-    padding: 0 50px;
+    padding: 0 30px;
 
     p {
         font-family: $font-secondary;
@@ -128,6 +137,18 @@ section {
             width: 100%;
             object-fit: cover;
             aspect-ratio: 1 / 1;
+        }
+    }
+
+    .box-inner {
+        padding:  25px;
+        
+        * {
+            margin: 0;
+        }
+
+        p {
+            padding-top: 2px;
         }
     }
 }
